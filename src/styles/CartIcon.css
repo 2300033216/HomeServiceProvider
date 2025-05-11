@@ -1,0 +1,23 @@
+.booking-icon {
+  position: relative;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.booking-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff5a5f; /* More fitting color for home service */
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.booking-icon:hover {
+  color: #ff6347; /* Subtle color change on hover */
+}

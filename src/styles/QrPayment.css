@@ -1,0 +1,56 @@
+/* QR Container */
+.qr-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;  /* Light background to match the app theme */
+  max-width: 450px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.qr-box {
+  padding: 2rem;
+  border: 2px dashed #4CAF50;  /* Green border to match the theme */
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  background: #e8f5e9;  /* Light green background for contrast */
+}
+
+.qr-img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.qr-container h3 {
+  color: #4CAF50;  /* Green heading to keep it consistent with the app's theme */
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.qr-container p {
+  color: #333;  /* Dark gray text for better readability */
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.btn-payment {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4CAF50;  /* Green button for consistency */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-payment:hover {
+  background-color: #388e3c;  /* Darker green on hover */
+}
+
+.btn-payment:focus {
+  outline: none;
+}

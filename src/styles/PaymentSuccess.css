@@ -1,0 +1,48 @@
+/* Success Container */
+.success-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e8f5e9;  /* Light green background for success */
+  max-width: 450px;  /* Increased width for better content fitting */
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.success-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.success-container h3 {
+  color: #4CAF50;  /* Green color for success message */
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.success-container p {
+  font-size: 16px;
+  color: #333;  /* Dark text for readability */
+  margin-bottom: 1.5rem;
+}
+
+.btn-track-order {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4CAF50;  /* Green button matching the theme */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-track-order:hover {
+  background-color: #388e3c;  /* Darker green for hover effect */
+}
+
+.btn-track-order:focus {
+  outline: none;
+}

@@ -1,0 +1,169 @@
+/* ===== Home Container ===== */
+.home-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  padding-bottom: 80px; /* Adjust to match footer height */
+}
+
+/* Hero Banner */
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #e0f7fa; /* Soft blue background for home service feel */
+  border-bottom: 1px solid #00bcd4; /* Soft border color */
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  color: #00b386; /* Home service-oriented green */
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box select,
+.search-box input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.hero-right img {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Service Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: #fff;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-card h3 {
+  color: #00b386; /* Green for service category */
+  margin-bottom: 4px;
+}
+
+.category-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.category-card span {
+  font-weight: bold;
+  color: #ff9900; /* Highlighting key information */
+}
+
+/* Home Service Providers Section */
+.service-section {
+  padding: 40px 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 240px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Service Request Banner */
+.request-banner {
+  background: #00b386; /* Green banner for service requests */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+}
+
+.request-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.request-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.request-banner button {
+  background: #ff5c00; /* Service action button */
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.request-banner button:hover {
+  background: #e65c00;
+}

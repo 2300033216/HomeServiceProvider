@@ -1,0 +1,232 @@
+/* Eliminate all bullet points in navbar lists */
+.navbar ul,
+.navbar li,
+.navbar li::marker {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main navbar container */
+.navbar {
+  background-color: #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left, center, right sections */
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  justify-content: center;
+}
+
+.navbar-right {
+  flex: 1;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* Logo and brand */
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #c8f0d4;
+}
+
+.brand {
+  margin-left: 4px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #66bb6a;
+}
+
+/* Dropdown for Admin and Profile */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: #66bb6a;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Auth links */
+.auth-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-links a:hover {
+  background-color: #66bb6a;
+}
+
+/* Logout button */
+.logout-button {
+  color: white;
+  background-color: #d32f2f;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Cart container */
+.cart-container {
+  background: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    height: auto;
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .auth-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dropdown-menu {
+    left: 0;
+    right: auto;
+    min-width: 100%;
+  }
+}
